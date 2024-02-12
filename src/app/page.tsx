@@ -1,10 +1,11 @@
-import BasicExampleGestures from '@/examples/gestures/basic-example'
+import ReorderExample from '@/examples/reorder'
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
+    <main className="h-full w-full overflow-x-hidden">
       {/* <BasicAnimationMotionDiv /> */}
-      <BasicExampleGestures />
+      {/* <BasicExampleGestures /> */}
+      <ReorderExample />
     </main>
   )
 }
