@@ -24,6 +24,7 @@ const BasicAnimationMotionDiv = () => {
             y: stateY[0],
             rotate: stateRotate[0]
           }}
+          transition={{ duration: 0.5 }}
         />
         <div className="flex w-96 flex-col gap-5">
           <div className="flex items-center gap-5">
