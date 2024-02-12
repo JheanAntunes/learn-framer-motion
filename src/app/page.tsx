@@ -1,9 +1,10 @@
-import BasicAnimationMotionDiv from '@/examples/basic-animation-motion-div'
+import BasicExampleGestures from '@/examples/gestures/basic-example'
 
 export default function Home() {
   return (
     <main className="h-full w-full">
-      <BasicAnimationMotionDiv />
+      {/* <BasicAnimationMotionDiv /> */}
+      <BasicExampleGestures />
     </main>
   )
 }
