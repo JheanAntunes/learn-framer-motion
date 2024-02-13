@@ -76,14 +76,14 @@
 }
 
 @layer utilities {
-  body {
+  /* body {
     overflow: hidden;
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
   .example-container {
     width: 100vw;
