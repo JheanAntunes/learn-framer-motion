@@ -1,4 +1,4 @@
-import ExampleAnimatePresence from '@/examples/animate-presence'
+import Stagger from '@/examples/stagger'
 
 export default function Home() {
   return (
@@ -7,7 +7,8 @@ export default function Home() {
       {/* <BasicExampleGestures /> */}
       {/* <ReorderExample /> */}
       {/* <MenuMobile /> */}
-      <ExampleAnimatePresence />
+      {/* <ExampleAnimatePresence /> */}
+      <Stagger />
     </main>
   )
 }
