@@ -1,4 +1,4 @@
-import MenuMobile from '@/examples/menu-mobile'
+import ExampleAnimatePresence from '@/examples/animate-presence'
 
 export default function Home() {
   return (
@@ -6,7 +6,8 @@ export default function Home() {
       {/* <BasicAnimationMotionDiv /> */}
       {/* <BasicExampleGestures /> */}
       {/* <ReorderExample /> */}
-      <MenuMobile />
+      {/* <MenuMobile /> */}
+      <ExampleAnimatePresence />
     </main>
   )
 }
