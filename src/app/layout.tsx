@@ -1,3 +1,5 @@
+import Header from '@/components/layout/header'
+import TransitionPage from '@/components/transition-page'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
@@ -16,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className + ' h-dvh w-dvw'}>{children}</body>
+      <body className={inter.className + ' h-screen w-screen'}>
+        <Header />
+        <TransitionPage>{children}</TransitionPage>
+      </body>
     </html>
   )
 }
