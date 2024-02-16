@@ -4,8 +4,8 @@ type DataLink = {
 }
 
 export const dataLinks: DataLink[] = [
-  { href: '#', content: 'Item1' },
-  { href: '#', content: 'Item2' },
-  { href: '#', content: 'Item3' },
+  { href: '/about', content: 'Sobre' },
+  { href: '/contact', content: 'Contato' },
+  { href: '/project', content: 'Projeto' },
   { href: '#', content: 'Item4' }
 ]
