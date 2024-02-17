@@ -1,14 +1,15 @@
-import Stagger from '@/examples/stagger'
+import CurvedMenuMobile from '@/components/curved-menu'
 
 export default function Home() {
   return (
-    <main className="h-full w-full overflow-x-hidden">
+    <main className="h-full w-full">
       {/* <BasicAnimationMotionDiv /> */}
       {/* <BasicExampleGestures /> */}
       {/* <ReorderExample /> */}
       {/* <MenuMobile /> */}
       {/* <ExampleAnimatePresence /> */}
-      <Stagger />
+      {/* <Stagger /> */}
+      <CurvedMenuMobile />
     </main>
   )
 }
