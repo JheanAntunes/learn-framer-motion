@@ -122,4 +122,21 @@
     align-items: center;
     cursor: pointer;
   }
+
+  .maskCursor {
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    line-height: 66px;
+    cursor: default;
+    position:  absolute;
+    mask-image: url('../../public/mask.svg');
+    background: orangered;
+    mask-repeat: no-repeat;
+    mask-size: 40px;
+    color: black;
+    pointer-events: none;
+  }
 }
