@@ -1,4 +1,3 @@
-import AnimationCursor from '@/components/animation-cursor'
 import Header from '@/components/layout/header'
 import TransitionPage from '@/components/transition-page'
 import type { Metadata } from 'next'
@@ -22,7 +21,7 @@ export default function RootLayout({
       <body className={inter.className + ''}>
         <Header />
         <TransitionPage>{children}</TransitionPage>
-        <AnimationCursor />
+        {/* <AnimationCursor /> */}
       </body>
     </html>
   )

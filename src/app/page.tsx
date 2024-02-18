@@ -1,3 +1,4 @@
+import AnimationIcons from '@/components/animation-icons'
 import CurvedMenuMobile from '@/components/curved-menu'
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       {/* <ExampleAnimatePresence /> */}
       {/* <Stagger /> */}
       <CurvedMenuMobile />
+      <AnimationIcons />
     </main>
   )
 }
