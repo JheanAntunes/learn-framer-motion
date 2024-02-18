@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { dataLinks } from '../../examples/menu-mobile/data-links'
+import { MotionDivWithRef } from '../animation-icons/list-icons'
 
 const Header = () => {
   return (
@@ -11,7 +12,9 @@ const Header = () => {
         <ul className="flex items-center gap-8">
           {dataLinks.map(({ href, content }) => (
             <li key={href + content}>
-              <Link href={href}>{content}</Link>
+              <MotionDivWithRef>
+                <Link href={href}>{content}</Link>
+              </MotionDivWithRef>
             </li>
           ))}
         </ul>
