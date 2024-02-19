@@ -38,7 +38,7 @@ export const MotionDivWithRef = ({ children }: React.PropsWithChildren) => {
     const { width, height, left, top } = ref.current.getBoundingClientRect()
     const x = clientX - (left + width / 2)
     const y = clientY - (top + height / 2)
-    setPosition({ x, y })
+    setPosition({ x: x * 0.1, y: y * 0.1 })
   }
 
   const handleMouseLeave = () => {
