@@ -1,5 +1,5 @@
-import AnimationIcons from '@/components/animation-icons'
 import CurvedMenuMobile from '@/components/curved-menu'
+import StickyCursor from '@/components/sticky-cursor'
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       {/* <ExampleAnimatePresence /> */}
       {/* <Stagger /> */}
       <CurvedMenuMobile />
-      <AnimationIcons />
+      <StickyCursor />
     </main>
   )
 }
