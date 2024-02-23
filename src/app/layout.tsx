@@ -1,5 +1,6 @@
 import Header from '@/components/layout/header'
 import TransitionPage from '@/components/transition-page'
+import SmoothScrolling from '@/lib/SmoothScrolling'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={inter.className + ''}>
         <Header />
-        <TransitionPage>{children}</TransitionPage>
+        <SmoothScrolling>
+          <TransitionPage>{children}</TransitionPage>
+        </SmoothScrolling>
         {/* <AnimationCursor /> */}
       </body>
     </html>
