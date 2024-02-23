@@ -1,17 +1,17 @@
-import CurvedMenuMobile from '@/components/curved-menu'
-import StickyCursor from '@/components/sticky-cursor'
+import SmoothScrollCardsParallax from '@/components/smooth-scroll-cards-parallax'
 
 export default function Home() {
   return (
-    <main className="h-full w-full">
+    <main>
       {/* <BasicAnimationMotionDiv /> */}
       {/* <BasicExampleGestures /> */}
       {/* <ReorderExample /> */}
       {/* <MenuMobile /> */}
       {/* <ExampleAnimatePresence /> */}
       {/* <Stagger /> */}
-      <CurvedMenuMobile />
-      <StickyCursor />
+      {/* <CurvedMenuMobile /> */}
+      {/* <StickyCursor />  */}
+      <SmoothScrollCardsParallax />
     </main>
   )
 }
