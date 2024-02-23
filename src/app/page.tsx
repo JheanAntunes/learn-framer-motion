@@ -1,5 +1,3 @@
-import SmoothScrollCardsParallax from '@/components/smooth-scroll-cards-parallax'
-
 export default function Home() {
   return (
     <main>
@@ -11,7 +9,16 @@ export default function Home() {
       {/* <Stagger /> */}
       {/* <CurvedMenuMobile /> */}
       {/* <StickyCursor />  */}
-      <SmoothScrollCardsParallax />
+      {/* <SmoothScrollCardsParallax /> */}
+      <div className="flex flex-col gap-5">
+        <h1 className="font-sans text-5xl">Página Home</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,
+          mollitia commodi! sSapiente placeat dolorem modi tempore corporis error
+          vitae, quia tenetur provident voluptas, eius magnam sint labore iure
+          quasi doloribus!
+        </p>
+      </div>
     </main>
   )
 }
