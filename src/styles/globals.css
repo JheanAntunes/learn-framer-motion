@@ -122,7 +122,10 @@
     align-items: center;
     cursor: pointer;
   }
-
+  .linkContainer {
+    perspective: 120px;
+    perspective-origin: bottom;
+  }
   .maskCursor {
     inset: 0;
     display: flex;
