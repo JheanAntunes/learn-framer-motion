@@ -1,8 +1,8 @@
-import Inner from '@/examples/transitions-page/one-example/inner'
+import Stairs from '@/examples/transitions-page/two-example'
 import React from 'react'
 
 const template = ({ children }: React.PropsWithChildren) => {
-  return <Inner>{children}</Inner>
+  return <Stairs>{children}</Stairs>
 }
 
 export default template
