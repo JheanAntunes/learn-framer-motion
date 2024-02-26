@@ -1,5 +1,4 @@
 import Header from '@/components/layout/header'
-import SideMenu from '@/examples/awwwards/side-menu'
 import SmoothScrolling from '@/lib/SmoothScrolling'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
@@ -21,10 +20,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={inter.className}>
         <Header />
-        <SmoothScrolling>
-          <SideMenu />
-          {children}
-        </SmoothScrolling>
+        <SmoothScrolling>{children}</SmoothScrolling>
         {/* <AnimationCursor /> */}
       </body>
     </html>
