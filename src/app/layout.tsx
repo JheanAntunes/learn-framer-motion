@@ -1,3 +1,4 @@
+import { BackgroundGradient } from '@/components/aceternity/demo/bg-gradient'
 import NavigationMenu from '@/examples/awwwards/navigation-menu'
 import SmoothScrolling from '@/lib/SmoothScrolling'
 import type { Metadata } from 'next'
@@ -18,10 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className + ' h-svh w-svw'}>
+      <body className={inter.className + ' w-svw" h-svh'}>
         {/* <Header /> */}
-        <NavigationMenu />
-        <SmoothScrolling>{children}</SmoothScrolling>
+        <BackgroundGradient className="h-full w-full">
+          <NavigationMenu />
+          <SmoothScrolling>{children}</SmoothScrolling>
+        </BackgroundGradient>
         {/* <AnimationCursor /> */}
       </body>
     </html>
