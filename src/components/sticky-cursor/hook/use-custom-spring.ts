@@ -5,7 +5,7 @@ type Props = {
   y: MotionValue<number>
 }
 
-const smothOptions = { stiffness: 300, damping: 20, mass: 0.5 }
+export const smothOptions = { stiffness: 300, damping: 20, mass: 0.5 }
 
 const useCustomSpring = ({ x, y }: Props) => {
   const springX = useSpring(x, smothOptions)
