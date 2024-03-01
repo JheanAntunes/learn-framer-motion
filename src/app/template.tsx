@@ -1,8 +1,7 @@
-import Stairs from '@/examples/transitions-page/two-example'
 import React from 'react'
 
-const template = ({ children }: React.PropsWithChildren) => {
-  return <Stairs>{children}</Stairs>
+const Template = ({ children }: React.PropsWithChildren) => {
+  return <>{children}</>
 }
 
-export default template
+export default Template
