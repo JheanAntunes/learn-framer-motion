@@ -1,29 +1,34 @@
-import { ImagesSliderDemo } from '@/components/aceternity/demo/image-slider-demo'
-import { Button } from '@/components/ui/button'
+import { TextGenerateEffect } from '@/components/aceternity/ui/text-generate-effect'
+import { TracingBeam } from '@/components/aceternity/ui/tracing-beam'
+import { TypewriterEffectSmooth } from '@/components/aceternity/ui/typewriter-effect'
 
 const PageAceternityExamples = () => {
+  const wordsInitial =
+    'Olá, Sou Jhean que está na jornada de desenvolvedor front-end'
+  const wordsTypeEffect = [
+    {
+      text: 'Meus'
+    },
+    {
+      text: 'Projetos'
+    }
+  ]
   return (
-    <main className="h-svh w-svw">
+    <main className="overflow-x-hidden">
       {/* <ThreeDCardDemo /> */}
       {/* <SparklesPreview /> */}
-
-      <div className="space-y-1">
-        {/* Header */}
-        <h1 className="font-serif text-4xl text-white">Produto</h1>
-        <p className="font-sans text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          possimus, cumque voluptatem facere suscipit quo pariatur aliquid, in
-          ratione, assumenda quas aliquam impedit! Nisi consectetur voluptatem
-          animi mollitia aliquam rerum!
-        </p>
-      </div>
-      <div className="flex items-center">
-        {/* Body */}
-        <Button>Comprar Produto</Button>
-      </div>
-      <div className="mb-8">
-        <ImagesSliderDemo />
-      </div>
+      {/* <BackgroundBoxesDemo /> */}
+      <TracingBeam className="px-8">
+        <section className="flex h-svh w-svw items-center justify-center">
+          <TextGenerateEffect words={wordsInitial} />
+        </section>
+        <section
+          id="#project"
+          className="flex h-svh w-svw items-center justify-center"
+        >
+          <TypewriterEffectSmooth words={wordsTypeEffect} />
+        </section>
+      </TracingBeam>
     </main>
   )
 }
