@@ -1,4 +1,4 @@
-import SmoothScrolling from '@/lib/SmoothScrolling'
+import LocomotiveSmoothScroll from '@/lib/locomotive-smooth-scroll'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../styles/globals.css'
@@ -17,10 +17,35 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className + ' w-svw" h-svh'}>
-        {/* <Header /> */}
+      <body className={inter.className + ' w-svw" h-svh bg-neutral-950'}>
+        {/* <div className="fixed inset-0">
+          <BackgroundBeams />
+        </div>
+        <header className="fixed top-0 z-10 w-full overflow-hidden p-8 text-transparent">
+          <nav className="flex items-center justify-between">
+            <Link
+              href="/"
+              className="ml-1 inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            >
+              Jhean Antunes Lopes
+            </Link>
+            <ul className="flex gap-5">
+              {dataLinks.map(({ content, href }) => (
+                <li key={content + href} className="group relative">
+                  <Link
+                    href="#project"
+                    className="bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text font-medium"
+                  >
+                    {content}
+                  </Link>
+                  <div className="absolute top-full -z-10 h-[1px] w-0 bg-gradient-to-r from-fuchsia-500 to-cyan-500 transition-all duration-300 group-hover:w-full" />
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </header> */}
         {/* <NavigationMenu /> */}
-        <SmoothScrolling>{children}</SmoothScrolling>
+        <LocomotiveSmoothScroll>{children}</LocomotiveSmoothScroll>
         {/* <AnimationCursor /> */}
       </body>
     </html>
