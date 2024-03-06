@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className + ' w-svw" h-svh bg-neutral-950'}>
+      <body className={inter.className + ' bg-neutral-950'}>
         {/* <div className="fixed inset-0">
           <BackgroundBeams />
         </div>
