@@ -1,9 +1,9 @@
 'use client'
 import { useState } from 'react'
+import { Cards } from '../types/types'
 import BurnBarrel from './burn-barrel'
 import { Column } from './column'
 import { DEFAULT_CARD } from './data-card'
-import { Cards } from './types'
 
 export const Board = () => {
   const [cards, setCards] = useState<Cards[]>(DEFAULT_CARD)

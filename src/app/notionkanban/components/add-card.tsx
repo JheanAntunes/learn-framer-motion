@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React, { SetStateAction, useState } from 'react'
 import { FiPlus } from 'react-icons/fi'
-import { Cards, Column } from './types'
+import { Cards, Column } from '../types/types'
 
 type PropsAddCard = {
   setCards: React.Dispatch<SetStateAction<Cards[]>>

@@ -1,4 +1,4 @@
-import { Cards } from './types'
+import { Cards } from '../types/types'
 
 export const DEFAULT_CARD: Cards[] = [
   //   BACKLOG

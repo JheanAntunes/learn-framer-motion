@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils'
 import { useState } from 'react'
 import { FaFire } from 'react-icons/fa'
 import { FiTrash } from 'react-icons/fi'
-import { Cards } from './types'
+import { Cards } from '../types/types'
 type BurnBarrelProps = {
   setCards: React.Dispatch<React.SetStateAction<Cards[]>>
 }

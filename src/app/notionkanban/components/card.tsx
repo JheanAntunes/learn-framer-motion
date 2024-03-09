@@ -1,6 +1,6 @@
 import { MotionDiv } from '@/components/framer-motion'
+import { Cards } from '../types/types'
 import DropIndicator from './drop-indicator'
-import { Cards } from './types'
 
 export default function Card({
   column,

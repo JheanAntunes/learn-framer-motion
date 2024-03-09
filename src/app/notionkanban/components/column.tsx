@@ -1,9 +1,9 @@
 import { cn } from '@/lib/utils'
 import { useState } from 'react'
+import { Cards, Column as TypeColumn } from '../types/types'
 import AddCard from './add-card'
 import Card from './card'
 import DropIndicator from './drop-indicator'
-import { Cards, Column as TypeColumn } from './types'
 
 type PropsColums = {
   title: string
