@@ -97,6 +97,7 @@ const config = {
   },
   plugins: [
     require('tailwindcss-animate'),
+    require('tailwindcss-animated'),
     addVariablesForColors,
     function ({ matchUtilities, theme }: unknown) {
       matchUtilities(
