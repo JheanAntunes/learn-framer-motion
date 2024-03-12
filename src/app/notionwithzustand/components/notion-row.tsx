@@ -8,7 +8,7 @@ const NotionRow = ({
     <div
       draggable={true}
       className={cn(
-        'my-5 cursor-grab rounded border border-solid border-neutral-800 p-5 text-neutral-200 active:cursor-grabbing',
+        'my-1 cursor-grab rounded border border-solid border-neutral-800 p-5 text-neutral-200 active:cursor-grabbing',
         className
       )}
       {...restProps}
