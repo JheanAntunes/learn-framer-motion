@@ -1,5 +1,6 @@
 'use client'
 
+import DropIndicator from '@/app/notionkanban/components/drop-indicator'
 import { Column } from '@/app/notionkanban/types/types'
 import { MotionDiv } from '@/components/framer-motion'
 import { useStoreNotion } from '../store'
@@ -28,10 +29,11 @@ const NotionRows = ({ column }: NotionRows) => {
     )
   }
   return (
-    <>
+    <div className="space-y-5">
       {tasks &&
-        tasks.map(({ id, title }) => (
+        tasks.map(({ id, title, column }) => (
           <MotionDiv key={id} layout>
+            <DropIndicator beforeId={id} column={column} />
             <NotionRow
               onDragStart={(event) => handleDragStart({ id, event, column })}
             >
@@ -39,7 +41,7 @@ const NotionRows = ({ column }: NotionRows) => {
             </NotionRow>
           </MotionDiv>
         ))}
-    </>
+    </div>
   )
 }
 
