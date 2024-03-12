@@ -1,3 +1,5 @@
+import DropIndicator from '@/app/notionkanban/components/drop-indicator'
+import { Column } from '@/app/notionkanban/types/types'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { NotionAddRow } from './notion-add-row'
 import NotionColumn from './notion-column'
@@ -5,16 +7,18 @@ import NotionRows from './notion-rows'
 import QuantityRows from './quantity-rows'
 
 const NotionColumnComplete = () => {
+  const column: Column = 'done'
   return (
-    <NotionColumn>
+    <NotionColumn column={column}>
       <h2 className="flex items-center justify-between font-serif text-2xl uppercase text-emerald-500">
         Complete
-        <QuantityRows column="done" className="text-emerald-500" />
+        <QuantityRows column={column} className="text-emerald-500" />
       </h2>
       <ScrollArea className="h-[400px] w-full">
-        <NotionRows column="done" />
+        <NotionRows column={column} />
+        <DropIndicator beforeId="-1" column={column} />
       </ScrollArea>
-      <NotionAddRow column="done" />
+      <NotionAddRow column={column} />
     </NotionColumn>
   )
 }
